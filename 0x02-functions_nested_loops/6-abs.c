@@ -1,3 +1,5 @@
+#include <stdlib.h>
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -7,8 +9,8 @@
 */
 int _abs(int n)
 {
-	int result;
-
-	result = abs(n);
-	return (result);
+	if (n >= 0)
+		return (n);
+	else
+		return (n * -1);
 }
