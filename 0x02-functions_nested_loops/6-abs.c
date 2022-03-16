@@ -7,7 +7,14 @@ include "main.h"
 */
 int _abs(int c)
 {
+	int c = a;
+	int absvalue;
+
+
 	if (c < 0)
-		c = c * -1;
-	return (c);
+	{
+		c = c *(-1);
+	}
+	absvalue = c;
+	return (absvalue);
 }
