@@ -1,15 +1,24 @@
 #include "main.h"
 
 /**
-* _puts - function that prints a string,
-* @str: char to check
+* _puts - function that prints a string, followed by a new line.
+* @str: input string
 * Return: void
 */
 
 void _puts(char *str)
 {
-	while (str[i])
-		_putchar(*str++);
+	int count = 0;
 
-	_putchar('\n');
+	while (count >= 0)
+	{
+		if (str[count] == '\0')
+		{
+			_putchar('\n');
+
+			break;
+		}
+		_putchar(str[count]);
+		count++;
+	}
 }
