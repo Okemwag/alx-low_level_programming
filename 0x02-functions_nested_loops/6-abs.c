@@ -6,10 +6,9 @@
 *Return: Always 0.
 */
 
-int _abs(int i)
+int _abs(int* i)
 {
-	int j = i;
-	if (j < 0)
-		j = j * -1;
-	return (j);
+	if(i < 0)
+		*i = *i * -1;
+	return (&i);
 }
