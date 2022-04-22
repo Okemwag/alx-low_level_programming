@@ -1,10 +1,10 @@
 #include "lists.h"
-#include <string.h>
+
 
 /**
-* list_len - function that prints all the elements of a list_t list
-* @h: pointer to the struct list_t
-* Return: size_t
+* list_len - function that returns the number of elements  in a linked list
+* @h: head of the list
+* Return: counter of elements in the list
 */
 
 size_t list_len(const list_t *h)
@@ -14,9 +14,9 @@ size_t list_len(const list_t *h)
 	counter = 0;
 
 
-	while(h != NULL)
+	while (h != NULL)
 	{
-		h = h_->next;
+		h = h->next;
 		counter++;
 	}
 	return (counter);
