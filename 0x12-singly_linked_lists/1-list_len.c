@@ -9,10 +9,15 @@
 
 size_t list_len(const list_t *h)
 {
-	size_t count;
+	size_t counter;
 
-	for (count = 0; h != NULL; count++)
+	counter = 0;
+
+
+	while(h != NULL)
 	{
-		h = (*h).next;
-		return (count);
+		h = h_->next;
+		counter++;
+	}
+	return (counter);
 }
