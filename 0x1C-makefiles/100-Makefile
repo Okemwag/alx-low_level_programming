@@ -1,0 +1,21 @@
+# -*- Makefile -*-
+
+CC = gcc
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o) 
+NAME = school
+CFLAGS = -Wall -Werror -Wextra -pedantic
+
+.PHONY: all clean fclean oclean re
+
+all : m.h $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+fclean: oclean clean
+
+oclean:
+	$(RM) $(OBJ)
+
+clean :
+	$(RM) *~ $(NAME)
+re: fclean all
