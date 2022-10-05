@@ -1,2 +1,7 @@
 /*
-* main.c search algorithsms
+*
+*
+*/
+int main {
+	new}
+
